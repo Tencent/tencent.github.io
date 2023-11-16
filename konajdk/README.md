@@ -9,9 +9,9 @@ Kona serves as the default JDK at Tencent internally, optimized for extreme-scal
 Tencent Kona currently supports the JDK Long-Term Support (LTS) releases 8, 11 and 17.
 For more details, please go through the individual repository for each of these releases:
 
-- Tencent Kona 8: https://github.com/Tencent/TencentKona-8
-- Tencent Kona 11: https://github.com/Tencent/TencentKona-11
-- Tencent Kona 17: https://github.com/Tencent/TencentKona-17
+- Tencent Kona 8: [https://github.com/Tencent/TencentKona-8](https://github.com/Tencent/TencentKona-8)
+- Tencent Kona 11: [https://github.com/Tencent/TencentKona-11](https://github.com/Tencent/TencentKona-11)
+- Tencent Kona 17: [https://github.com/Tencent/TencentKona-17](https://github.com/Tencent/TencentKona-17)
 
 ## Supported System Platforms
 
