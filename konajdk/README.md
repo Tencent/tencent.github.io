@@ -19,4 +19,4 @@ Tencent Kona currently supports Linux/x86_64, Linux/aarch64, Windows/x86_64 and 
 
 ## License
 
-Tencent Kona is under the same licensing terms as the upstream OpenJDK project. It is clearly a "friendly fork". Please find the license [text](https://tencent.github.io/konajdk/LICENSE) for more details.
+Tencent Kona is under the same licensing terms as the upstream OpenJDK project. It is clearly a "friendly fork". Please find the license [text](https://tencent.github.io/konajdk/LICENSE.txt) for more details.
