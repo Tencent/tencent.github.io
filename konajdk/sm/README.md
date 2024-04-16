@@ -89,7 +89,7 @@ ECPrivateKey privateKey = (ECPrivateKey) keyPair.getPrivate();
 
 SM2 key pair is also EC key pair, so the public key and private key are also ECPublicKey and ECPrivateKey respectively.
 
-For more information on key pair generation, please refer to the official [KeyPairGenerator] docs.
+For more information on key pair generation, please refer to the official [KeyPairGenerator](https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html#GUID-7EA29AC2-28B5-405D-BD2F-7055EC9E1EDD) docs.
 
 Generally, in the signing and encrypting operations, the key pairs are already generated. They are not generated on the runtime. It just reads the existing public key and private key to create PublicKey and PrivateKey instances respectively.
 
@@ -167,7 +167,7 @@ boolean verified = signature.verify(sign);
 
 If the verification is successful, the result is true, otherwise false.
 
-It has to know that the private key is used for signing, however the public key is used for verifying. For detailed information about Signature APIs, please refer to the official [Signature] docs.
+It has to know that the private key is used for signing, however the public key is used for verifying. For detailed information about Signature APIs, please refer to the official [Signature](https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html#GUID-9CF09CE2-9443-4F4E-8095-5CBFC7B697CF) docs.
 
 ### Encryption
 Because of the performance concern, public key encryption is only used for encrypting short but critical data. The same to SM2 encryption.
@@ -203,7 +203,7 @@ Pass the ciphertext in and generate the plaintext.
 byte[] cleartext = cipher.doFinal(ciphertext);
 ```
 
-It has to know that public key is used for encryption, however the private key is used for decryption. For detailed information on Cipher APIs, please refer to the official [Cipher] docs.
+It has to know that public key is used for encryption, however the private key is used for decryption. For detailed information on Cipher APIs, please refer to the official [Cipher](https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html#GUID-94225C88-F2F1-44D1-A781-1DD9D5094566) docs.
 
 ## SM3
 
@@ -236,7 +236,7 @@ md.update(messageSegment2);
 byte[] digest = md.digest();
 ```
 
-For detailed information about MessageDigest APIs, please refer to the official [MessageDigest] docs.
+For detailed information about MessageDigest APIs, please refer to the official [MessageDigest](https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html#GUID-FB0090CA-2BCC-4D2C-BD2F-6F0A97197BD7) docs.
 
 ## HmacSM3
 
@@ -282,7 +282,7 @@ hmac.update(messageSegment2);
 byte[] mac = hmac.doFinal();
 ```
 
-For the detailed information about Mac APIs, please refer to the official [Mac] docs.
+For the detailed information about Mac APIs, please refer to the official [Mac](https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html#GUID-8E014689-EBBB-4DE1-B6E0-24CE59AD8B9A) docs.
 
 ## SM4
 
@@ -319,8 +319,8 @@ AlgorithmParameterSpec paramSpec = <the parameter parameter instance>;
 
 Different operation modes may need different AlgorithmParameterSpec types,
 
-- CBC and CTR modes use [IvParameterSpec]. This parameter type needs a 16-bytes as Initialization Vector (IV).
-- GCM mode uses [GCMParameterSpec]. This parameter type needs a 12-bytes as Initialization Vector (IV) and specifies the tag length to 12-bytes.
+- CBC and CTR modes use [IvParameterSpec](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/spec/IvParameterSpec.html). This parameter type needs a 16-bytes as Initialization Vector (IV).
+- GCM mode uses [GCMParameterSpec](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/spec/GCMParameterSpec.html). This parameter type needs a 12-bytes as Initialization Vector (IV) and specifies the tag length to 12-bytes.
 
 Initialize the Cipher instance with the key and parameter type and set the mode to encryption.
 
@@ -373,7 +373,7 @@ X509Certificate certificate = (X509Certificate) cf.generateCertificate(
         new ByteArrayInputStream(certPEM.getBytes(StandardCharsets.UTF_8));
 ```
 
-For more information on certificate parsing, please read the official reference on [CertificateFactory].
+For more information on certificate parsing, please read the official reference on [CertificateFactory](https://docs.oracle.com/en/java/javase/21/security/java-pki-programmers-guide.html#GUID-BCABADD4-C0DC-4987-B187-F086B4BCE195).
 
 It can parse public key from the ShangMi certificate.
 
@@ -429,7 +429,7 @@ boolean verified = signature.verify(sign);
 
 ## TLCP 1.1 and TLS 1.3/RFC 8998
 
-In order to take advantage of the implementations on TLCP 1.1 and TLS 1.3/RFC 8998, the most important point is taking SSLSocket or SSLEngine to apply the [SSLContext] implementation that supports the protocols.
+In order to take advantage of the implementations on TLCP 1.1 and TLS 1.3/RFC 8998, the most important point is taking SSLSocket or SSLEngine to apply the [SSLContext](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLContext.html) implementation that supports the protocols.
 
 ```
 KeyStore trustStore = <a trust store carring the CAs>;
@@ -450,35 +450,4 @@ When create SSLContext instances, it allows to specify the following context pro
 - TLSv1.3, which indicates only TLS 1.3 is supported.
 - TLCP, which indicates TLCP 1.1, TLS 1.3 and TLS 1.2 are supported.
 
-Please read the official [JSSE] reference for understanding it deeply.
-
-
-[KeyPairGenerator]:
-<https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html#GUID-7EA29AC2-28B5-405D-BD2F-7055EC9E1EDD>
-
-[Signature]:
-<https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html#GUID-9CF09CE2-9443-4F4E-8095-5CBFC7B697CF>
-
-[Cipher]:
-<https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html#GUID-94225C88-F2F1-44D1-A781-1DD9D5094566>
-
-[MessageDigest]:
-<https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html#GUID-FB0090CA-2BCC-4D2C-BD2F-6F0A97197BD7>
-
-[MAC]:
-<https://docs.oracle.com/en/java/javase/21/security/java-cryptography-architecture-jca-reference-guide.html#GUID-8E014689-EBBB-4DE1-B6E0-24CE59AD8B9A>
-
-[IvParameterSpec]:
-<https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/spec/IvParameterSpec.html>
-
-[GCMParameterSpec]:
-<https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/crypto/spec/GCMParameterSpec.html>
-
-[CertificateFactory]:
-<https://docs.oracle.com/en/java/javase/21/security/java-pki-programmers-guide.html#GUID-BCABADD4-C0DC-4987-B187-F086B4BCE195>
-
-[SSLContext]:
-<https://docs.oracle.com/en/java/javase/21/docs/api/java.base/javax/net/ssl/SSLContext.html>
-
-[JSSE]:
-<https://docs.oracle.com/en/java/javase/21/security/java-secure-socket-extension-jsse-reference-guide.html#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345>
+Please read the official [JSSE](https://docs.oracle.com/en/java/javase/21/security/java-secure-socket-extension-jsse-reference-guide.html#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345) reference for understanding it deeply.
