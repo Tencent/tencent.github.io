@@ -4,6 +4,8 @@ Tencent Kona is a no-cost, production-ready distribution of the Open Java Develo
 
 Kona serves as the default JDK at Tencent internally, optimized for extreme-scale of Big Data, Machine Learning and Cloud Computing workload. It is also used to build and maintain a Tencent supported version of OpenJDK for Tencent customers and partners who wish to use OpenJDK to run their applications.
 
+Kona also implements China's cryptographic algorithms, including SM2, SM3 and SM4, and secure communication protocol TLCP (or SMSSL). For more details on theses features, please refer to [the reference guide](https://tencent.github.io/konajdk/sm/).
+
 ## Supported JDK Releases
 
 Tencent Kona currently supports the JDK Long-Term Support (LTS) releases 8, 11 and 17.
