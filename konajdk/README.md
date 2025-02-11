@@ -18,7 +18,7 @@ For more details, please go through the individual repository for each of these 
 
 ## Supported System Platforms
 
-Tencent Kona currently supports Linux/x86_64, Linux/aarch64, Windows/x86_64 and Mac/x86_64.
+Tencent Kona currently supports Linux/x86_64, Linux/aarch64, Windows/x86_64, macOS/x86_64 and macOS/aarch64.
 
 ## License
 
