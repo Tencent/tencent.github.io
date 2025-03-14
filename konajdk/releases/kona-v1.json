@@ -41,7 +41,7 @@
     {
       "version": "8.0.20",
       "jdkVersion": "8u432",
-      "latest": true,
+      "latest": false,
       "baseUrl": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.20-GA/",
       "files": [
         {
@@ -157,7 +157,7 @@
     {
       "version": "11.0.25",
       "jdkVersion": "11.0.25",
-      "latest": true,
+      "latest": false,
       "baseUrl": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.25/",
       "files": [
         {
@@ -273,7 +273,7 @@
     {
       "version": "17.0.13",
       "jdkVersion": "17.0.13",
-      "latest": true,
+      "latest": false,
       "baseUrl": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.13/",
       "files": [
         {
@@ -389,7 +389,7 @@
     {
       "version": "21.0.5",
       "jdkVersion": "21.0.5",
-      "latest": true,
+      "latest": false,
       "baseUrl": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.5/",
       "files": [
         {
