@@ -1,9 +1,85 @@
 {
   "8": [
     {
+      "version": "8.0.23",
+      "jdkVersion": "8u462",
+      "latest": true,
+      "baseUrl": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.23-GA/",
+      "files": [
+        {
+          "os": "linux",
+          "arch": "aarch64",
+          "filename": "TencentKona8.0.23.b1_jdk_linux-aarch64_8u462.tar.gz",
+          "checksum": "a030fe495b0bb658d374a019b6c71c8398a6d6e55d2d7295977b58c6e405f104"
+        },
+        {
+          "os": "linux",
+          "arch": "x86_64",
+          "filename": "TencentKona8.0.23.b1_jdk_linux-x86_64_8u462.tar.gz",
+          "checksum": "3aec92124fc7819447e383eceeb594b6f445c0e67bd7901a13dc9a07809f9462"
+        },
+        {
+          "os": "macos",
+          "arch": "aarch64",
+          "filename": "TencentKona8.0.23.b1_jdk_macosx-aarch64_8u462_notarized.tar.gz",
+          "checksum": "3104c269bc627a4f02af515eeb225252e3b5582faeb3cb661d6be01a32c61cbe"
+        },
+        {
+          "os": "macos",
+          "arch": "x86_64",
+          "filename": "TencentKona8.0.23.b1_jdk_macosx-x86_64_8u462_notarized.tar.gz",
+          "checksum": "c233ad56820b9b75fa94978e054b9497ac6b950b9718450a98f421605089e088"
+        },
+        {
+          "os": "windows",
+          "arch": "x86_64",
+          "filename": "TencentKona8.0.23.b1_jdk_windows-x86_64_8u462_signed.zip",
+          "checksum": "730ea613a32066b3f618282fd8e8907be3a2040e11e244ef3556623adbf3ab3e"
+        }
+      ]
+    },
+    {
+      "version": "8.0.22",
+      "jdkVersion": "8u453",
+      "latest": false,
+      "baseUrl": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.22-GA/",
+      "files": [
+        {
+          "os": "linux",
+          "arch": "aarch64",
+          "filename": "TencentKona8.0.22.b1_jdk_linux-aarch64_8u452.tar.gz",
+          "checksum": "ea9feb63520a8eace8c378bcb439dcdd80b016f55d3085c97e0c91add201c62e"
+        },
+        {
+          "os": "linux",
+          "arch": "x86_64",
+          "filename": "TencentKona8.0.22.b1_jdk_linux-x86_64_8u452.tar.gz",
+          "checksum": "0f5589e236715c9c8f1e2cea839c72bd437d2b429f93d0161e0f26b20c67c9b4"
+        },
+        {
+          "os": "macos",
+          "arch": "aarch64",
+          "filename": "TencentKona8.0.22.b1_jdk_macosx-aarch64_8u452_notarized.tar.gz",
+          "checksum": "0f5589e236715c9c8f1e2cea839c72bd437d2b429f93d0161e0f26b20c67c9b4"
+        },
+        {
+          "os": "macos",
+          "arch": "x86_64",
+          "filename": "TencentKona8.0.22.b1_jdk_macosx-x86_64_8u452_notarized.tar.gz",
+          "checksum": "2125b6d5d468013477f8a9a7047856feb0c030ab006ff7b2b922436eaa9b546b"
+        },
+        {
+          "os": "windows",
+          "arch": "x86_64",
+          "filename": "TencentKona8.0.22.b1_jdk_windows-x86_64_8u452_signed.zip",
+          "checksum": "d8ea3aa32cad86c216dbe032f6d12e68bf6ef40ff65839f8f57a5d8437c4c647"
+        }
+      ]
+    },
+    {
       "version": "8.0.21",
       "jdkVersion": "8u442",
-      "latest": true,
+      "latest": false,
       "baseUrl": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.21-GA/",
       "files": [
         {
@@ -117,9 +193,85 @@
   ],
   "11": [
     {
+      "version": "11.0.28",
+      "jdkVersion": "11.0.28",
+      "latest": true,
+      "baseUrl": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.28/",
+      "files": [
+        {
+          "os": "linux",
+          "arch": "aarch64",
+          "filename": "TencentKona-11.0.28.b1-jdk_linux-aarch64.tar.gz",
+          "checksum": "b0dffd84302b80de5bd86851d41d99a01db5e2d724bd529a37417094d9f3dbc9"
+        },
+        {
+          "os": "linux",
+          "arch": "x86_64",
+          "filename": "TencentKona-11.0.28.b1-jdk_linux-x86_64.tar.gz",
+          "checksum": "bc70691a78370db49b5071f6824b869b185fdb2b4d195c5a8078ca71c0e020e9"
+        },
+        {
+          "os": "macos",
+          "arch": "aarch64",
+          "filename": "TencentKona-11.0.28.b1_jdk_macosx-aarch64_notarized.tar.gz",
+          "checksum": "b5cf3f85eca8aad2df07dadf141b94326b56e3de3e8a6d7f101e9d48a621dc0b"
+        },
+        {
+          "os": "macos",
+          "arch": "x86_64",
+          "filename": "TencentKona-11.0.28.b1_jdk_macosx-x86_64_notarized.tar.gz",
+          "checksum": "397e1d3134d5206330964586c4b3324ce6c23f61b24c9b62e52273ea49d00a00"
+        },
+        {
+          "os": "windows",
+          "arch": "x86_64",
+          "filename": "TencentKona-11.0.28.b1_jdk_windows-x86_64_signed.zip",
+          "checksum": "78dd108268753addeba17c76c1a5e0be17af519832c23f4d39c484aa3f33e892"
+        }
+      ]
+    },
+    {
+      "version": "11.0.27",
+      "jdkVersion": "11.0.27",
+      "latest": false,
+      "baseUrl": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.27/",
+      "files": [
+        {
+          "os": "linux",
+          "arch": "aarch64",
+          "filename": "TencentKona-11.0.27.b1-jdk_linux-aarch64.tar.gz",
+          "checksum": "00a76d4a009b9a5f9660bfc515b0f54affc555705bc9be0e57bce24b1d631573"
+        },
+        {
+          "os": "linux",
+          "arch": "x86_64",
+          "filename": "TencentKona-11.0.27.b1-jdk_linux-x86_64.tar.gz",
+          "checksum": "599fefa6343e089a5fc7b51f9b3b5ced7bd335496246ccb67b7a62b14414c659"
+        },
+        {
+          "os": "macos",
+          "arch": "aarch64",
+          "filename": "TencentKona-11.0.27.b1_jdk_macosx-aarch64_notarized.tar.gz",
+          "checksum": "5bc9822567d23c47dd603bb79a9a701591aaf7af0c6036e750f6edca76586096"
+        },
+        {
+          "os": "macos",
+          "arch": "x86_64",
+          "filename": "TencentKona-11.0.27.b1_jdk_macosx-x86_64_notarized.tar.gz",
+          "checksum": "7c35c5c2fccf2aaace601ae4ce91f38aef46a652fa285c1727dd4429534cd502"
+        },
+        {
+          "os": "windows",
+          "arch": "x86_64",
+          "filename": "TencentKona-11.0.27.b1_jdk_windows-x86_64_signed.zip",
+          "checksum": "0bbdde09d272bfe7adb7bb77530335a25de8e0333737a311d935b1bfae57d2a8"
+        }
+      ]
+    },
+    {
       "version": "11.0.26",
       "jdkVersion": "11.0.26",
-      "latest": true,
+      "latest": false,
       "baseUrl": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.26/",
       "files": [
         {
@@ -233,9 +385,85 @@
   ],
   "17": [
     {
+      "version": "17.0.16",
+      "jdkVersion": "17.0.16",
+      "latest": true,
+      "baseUrl": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.16/",
+      "files": [
+        {
+          "os": "linux",
+          "arch": "aarch64",
+          "filename": "TencentKona-17.0.16.b1-jdk_linux-aarch64.tar.gz",
+          "checksum": "28e2af86995912d4b04113c22cb9bb682ce004b40a916ceaf7e51787a932ef41"
+        },
+        {
+          "os": "linux",
+          "arch": "x86_64",
+          "filename": "TencentKona-17.0.16.b1-jdk_linux-x86_64.tar.gz",
+          "checksum": "2112d20af7bde476afd4cc3a7cd7b5f523eab97867ab9b4dc7467e2cb7d92417"
+        },
+        {
+          "os": "macos",
+          "arch": "aarch64",
+          "filename": "TencentKona-17.0.16.b1_jdk_macosx-aarch64_notarized.tar.gz",
+          "checksum": "93b46f05cc586d64cb7db7181b52f035a73ea4636dd8b2adacc67f8f74d1664b"
+        },
+        {
+          "os": "macos",
+          "arch": "x86_64",
+          "filename": "TencentKona-17.0.16.b1_jdk_macosx-x86_64_notarized.tar.gz",
+          "checksum": "e324fe8ee35f061d3d3a1667cc2fcbeb3f053e7d06f271042c3f3b625b05929f"
+        },
+        {
+          "os": "windows",
+          "arch": "x86_64",
+          "filename": "TencentKona-17.0.16.b1_jdk_windows-x86_64_signed.zip",
+          "checksum": "db012d9788265601ff0705b33851ce65de94870a9ca0935b5dbb2cd1ee8b8105"
+        }
+      ]
+    },
+    {
+      "version": "17.0.15",
+      "jdkVersion": "17.0.15",
+      "latest": false,
+      "baseUrl": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.15/",
+      "files": [
+        {
+          "os": "linux",
+          "arch": "aarch64",
+          "filename": "TencentKona-17.0.15.b1-jdk_linux-aarch64.tar.gz",
+          "checksum": "cdb25f99d0a16ad85ff7881e215df46267962aad0e0f4e63f02338326dee0be3"
+        },
+        {
+          "os": "linux",
+          "arch": "x86_64",
+          "filename": "TencentKona-17.0.15.b1-jdk_linux-x86_64.tar.gz",
+          "checksum": "2894c0bfc6b958045dec6282f1519ec4f3f1f6a4571c50a829e3270de28a0f9d"
+        },
+        {
+          "os": "macos",
+          "arch": "aarch64",
+          "filename": "TencentKona-17.0.15.b1_jdk_macosx-aarch64_notarized.tar.gz",
+          "checksum": "732a18dbeb88e01bffaa7d611e431a37ddd843ba0a5b00aaac3d27c409cb34f9"
+        },
+        {
+          "os": "macos",
+          "arch": "x86_64",
+          "filename": "TencentKona-17.0.15.b1_jdk_macosx-x86_64_notarized.tar.gz",
+          "checksum": "0e90fdfd1c43ea75b4d6b8308e7d81fdb99653651d94d5afd727cf332b9851b8"
+        },
+        {
+          "os": "windows",
+          "arch": "x86_64",
+          "filename": "TencentKona-17.0.15.b1_jdk_windows-x86_64_signed.zip",
+          "checksum": "98a1c7663abcba9ce020a5a118759676ab4bd02256c227e224a0462c0368f49b"
+        }
+      ]
+    },
+    {
       "version": "17.0.14",
       "jdkVersion": "17.0.14",
-      "latest": true,
+      "latest": false,
       "baseUrl": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.14/",
       "files": [
         {
@@ -349,9 +577,85 @@
   ],
   "21": [
     {
+      "version": "21.0.8",
+      "jdkVersion": "21.0.8",
+      "latest": true,
+      "baseUrl": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.8/",
+      "files": [
+        {
+          "os": "linux",
+          "arch": "aarch64",
+          "filename": "TencentKona-21.0.8.b1-jdk_linux-aarch64.tar.gz",
+          "checksum": "6189178417dea089a200c1d5539846b5248ec68d8befd44e6838a84d46b6e2f5"
+        },
+        {
+          "os": "linux",
+          "arch": "x86_64",
+          "filename": "TencentKona-21.0.8.b1-jdk_linux-x86_64.tar.gz",
+          "checksum": "db26bea3413c9ba301ec0f197fc55395e07ba19733df0bbfd4ea9c905dbdfcfa"
+        },
+        {
+          "os": "macos",
+          "arch": "aarch64",
+          "filename": "TencentKona-21.0.8.b1_jdk_macosx-aarch64_notarized.tar.gz",
+          "checksum": "98343835a687b410cdf29a1cc641d2ee8f8c6197abb0cbfc6bd1a51c19aa2a98"
+        },
+        {
+          "os": "macos",
+          "arch": "x86_64",
+          "filename": "TencentKona-21.0.8.b1_jdk_macosx-x86_64_notarized.tar.gz",
+          "checksum": "9e73ab0249da4ec4931d02994a790a7ddfcd39463af6c5600f08c3e4e9fc68ce"
+        },
+        {
+          "os": "windows",
+          "arch": "x86_64",
+          "filename": "TencentKona-21.0.8.b1_jdk_windows-x86_64_signed.zip",
+          "checksum": "6145d728d3d4058171eb5a875236d8198321272b6a487f4b10593853de1e13b3"
+        }
+      ]
+    },
+    {
+      "version": "21.0.7",
+      "jdkVersion": "21.0.7",
+      "latest": false,
+      "baseUrl": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.7/",
+      "files": [
+        {
+          "os": "linux",
+          "arch": "aarch64",
+          "filename": "TencentKona-21.0.7.b1-jdk_linux-aarch64.tar.gz",
+          "checksum": "77f68d0b219f4572a28280958a500fac7aa9b85b3200c3d60c683b9eb5656366"
+        },
+        {
+          "os": "linux",
+          "arch": "x86_64",
+          "filename": "TencentKona-21.0.7.b1-jdk_linux-x86_64.tar.gz",
+          "checksum": "776713cf456e56a9568b4f7f05d806019301ca92030d50dae64b9f7cc8790dc6"
+        },
+        {
+          "os": "macos",
+          "arch": "aarch64",
+          "filename": "TencentKona-21.0.7.b1_jdk_macosx-aarch64_notarized.tar.gz",
+          "checksum": "f21815a97a079efe0bbabc729555e47f9bd685fe108c2de46201156897dc6044"
+        },
+        {
+          "os": "macos",
+          "arch": "x86_64",
+          "filename": "TencentKona-21.0.7.b1_jdk_macosx-x86_64_notarized.tar.gz",
+          "checksum": "81e21b5cfa2f0acb7a32d23628cb6c4988bd6232ac2fc0684538f522fdfae7ae"
+        },
+        {
+          "os": "windows",
+          "arch": "x86_64",
+          "filename": "TencentKona-21.0.7.b1_jdk_windows-x86_64_signed.zip",
+          "checksum": "a307ea722889341187a6ba8a74878f14dd9b426feb8319eda2271f960c83e157"
+        }
+      ]
+    },
+    {
       "version": "21.0.6",
       "jdkVersion": "21.0.6",
-      "latest": true,
+      "latest": false,
       "baseUrl": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.6/",
       "files": [
         {
